@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>লাকি ব্যাম্বো মাত্র ২০ টাকা!</title>
+  
+  <!-- Swiper CSS for slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #e0f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      border: 3px solid #00e5ff;
+      box-shadow: 0 0 20px #00e5ff;
+      border-radius: 10px;
+      background: white;
+      margin-top: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00796b;
+      font-size: 2.5rem;
+    }
+
+    /* Typing Animation for 20 টাকা */
+    .price-typing {
+      color: #d32f2f;
+      font-size: 2rem;
+      text-align: center;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typing 3s steps(30, end) infinite alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* Swiper Slider */
+    .swiper {
+      width: 100%;
+      height: 400px;
+      margin: 20px 0;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Order Button */
+    .order-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 15px;
+      background: #ff5722;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.4s;
+      animation: bounce 2s infinite;
+    }
+
+    .order-btn:hover {
+      background: #e64a19;
+      transform: scale(1.1);
+    }
+
+    /* Bouncing Effect for Button */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Features */
+    .features {
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #555;
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
+      animation: fadeIn 2s ease;
+    }
+
+    .features li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Reviews Section */
+    .reviews {
+      margin-top: 50px;
+      background: #f1f8e9;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .reviews h2 {
+      text-align: center;
+      color: #33691e;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      display: flex;
+      align-items: flex-start;
+      background: #fff;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      gap: 15px;
+      animation: slideIn 1s ease forwards;
+    }
+
+    .message img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #00b894;
+      object-fit: cover;
+    }
+
+    .message .text {
+      flex: 1;
+    }
+
+    .message .text p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .message .text span {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Footer Credit */
+    .credit {
+      text-align: center;
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>লাকি ব্যাম্বো বিক্রি চলছে!</h1>
+  <div class="price-typing">মাত্র ২০ টাকা!</div>
+
+  <!-- Image Slider -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://i.postimg.cc/T3K6X34Y/1745828608518.jpg" alt="Lucky Bamboo"></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/13gCJn8P/1745828617594.jpg" alt="Lucky Bamboo"></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/SNcfgB4T/1745828610471.jpg" alt="Lucky Bamboo"></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/DzpN798Q/1745828612765.jpg" alt="Lucky Bamboo"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Order Button -->
+  <a href="https://wa.me/message/MLHCE3U7YCR6N1" class="order-btn">অর্ডার করুন</a>
+
+  <!-- Why buy -->
+  <ul class="features">
+    <li>বাসা ও অফিসের পরিবেশ সুন্দর করে।</li>
+    <li>পজিটিভ এনার্জি বাড়ায়।</li>
+    <li>খুব সহজে বাঁচে, কম যত্ন লাগে।</li>
+    <li>দাম একেবারে সস্তা — মাত্র ২০ টাকা।</li>
+    <li>চাইনিজ ফেং-শুই মতে সৌভাগ্য বয়ে আনে।</li>
+  </ul>
+
+  <!-- Customer Reviews -->
+  <section class="reviews">
+    <h2>গ্রাহক মেসেঞ্জার রিভিউ</h2>
+
+    <div class="message">
+      <img src="https://i.postimg.cc/qqWc8yMh/bd1.jpg" alt="User 1">
+      <div class="text">
+        <p>ভাইয়া, আপনার লাকি ব্যাম্বো গাছগুলো একেবারে দারুণ! বাসার সবাই খুব খুশি।</p>
+        <span>- রিফাত হাসান</span>
+      </div>
+    </div>
+
+    <div class="message">
+      <img src="https://i.postimg.cc/gJX7MXTK/bd2.jpg" alt="User 2">
+      <div class="text">
+        <p>সত্যি কথা বলতে কি, এতো কম দামে এমন সুন্দর গাছ আশা করিনি! ইনশাআল্লাহ আবার নেব।</p>
+        <span>- সাবরিনা আক্তার</span>
+      </div>
+    </div>
+
+    <div class="message">
+      <img src="https://i.postimg.cc/7YbNf8M1/bd3.jpg" alt="User 3">
+      <div class="text">
+        <p>অফিস ডেস্কে রেখেছি, দারুণ লাগছে দেখতে। ধন্যবাদ ভাইয়া!</p>
+        <span>- ফাহিম হোসেন</span>
+      </div>
+    </div>
+
+    <div class="message">
+      <img src="https://i.postimg.cc/mgJ5MYT2/bd4.jpg" alt="User 4">
+      <div class="text">
+        <p>দাম কম, কোয়ালিটি ভালো — খুবই খুশি আমি। সবাইকে রেকমেন্ড করবো।</p>
+        <span>- সুমাইয়া শারমিন</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Credit Section -->
+  <div class="credit">
+    এই ওয়েবসাইটটি তৈরি করেছে <strong>হায়াত মাহমুদ</strong>
+  </div>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".swiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
+
+</body>
+</html>
